@@ -1,0 +1,382 @@
+﻿<html>
+<head>
+<link  rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<style>
+.button {
+  background-color: #24a0ed;
+	border: 1px solid #24a0ed;
+  border-radius:25px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+ // text-decoration: none;
+ // display: inline-block;
+  font-size: 13px;
+  margin: 2px 1px;
+  cursor: pointer;
+}
+.form-control {display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control2{display: block;
+	margin-left: -83px;
+    width: 200%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+	margin: right;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-controlproject{display: block;
+margin-left: 20px;   
+// width: 130%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+	margin: right;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-controlcat{display: block;
+	margin-left: 10px;
+    //width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+	margin: right;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-controldet{display: block;
+	margin-left: 20px;
+	margin-right:130px;
+    width: 140%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+	margin: right;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control1 {display: block;
+    width: 30%;
+    height: 34px;
+    //padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-controlcom {display: block; margin-left: 110px;
+	margin-right:20px;
+    width: 55%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-controleff {display: block; margin-left: 45px;
+	
+    width: 40%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-controlsta {display: block; 
+	margin-left: -30px;
+   // width: 150%;
+    height: 34px;
+    padding: 6px 25px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.text-center {
+    text-align: center;
+}
+.text-centerdet {
+    text-align: right;
+}
+
+.text-centercom {
+    text-align: right;
+	margin: 4;
+}
+.text-center1 {
+    text-align: left;
+}
+.text-centercat {
+    text-align: center;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+input:not([type="image" i]) {
+    box-sizing: border-box;
+}
+user agent stylesheet
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+user agent stylesheet
+table {
+    border-collapse: separate;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    //color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    font-variant: normal;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+</style>
+<table  class="table table-hover small-text" id="tb">
+<h3 style="color:#24a0ed;"> Daily Status </h3> 
+<tr class="tr-header">
+<th class="text-center1">
+S.No
+</th>
+
+	<th class="text-center1">Date</th>
+
+	<th class="text-center">Project</th>
+			
+	<th class="text-centercat">
+Category</th>
+
+	<th class="text-centerdet">Details
+</th>
+
+	<th class="text-centercom">Completion</th>
+			
+	<th class="text-center">
+Efforts</th>
+		
+	<th class="text-center">
+Status</th>
+
+<th><a href="javascript:void(0);" style="font-size:18px; color:green" id="addMore" title="Add More Person"><span class="glyphicon glyphicon-plus"></span></a></th>
+<th></th>
+<tr>
+<td><input type="text" name="S.NO[]"  class="form-control1"></td>
+<td><input type="date" name="Date" class="form-control2"></td>
+<td><select id="1" name="Project[]" class="form-controlproject">
+<option value="" selected="">Project</option>
+<option value="SeeR">SeeR</option>
+<option value="Nokia">Nokia</option>
+<option value="Liberty Steel">Liberty Steel</option>
+</select></td>
+
+<td><select name="Category[]" class="form-controlcat">
+<option value="" selected="">Category</option>
+<option value="Develop">Develop</option>
+<option value="Design">Design</option>
+<option value="Discussion">Discussion</option>
+<option value="Training">Training</option>
+<option value="Meetings">Meetings</option>
+<option value="Leave">Leave</option>
+<option value="Holiday">Holiday</option>
+</select></td>
+<td><input type="text" name="Details[]" class="form-controldet"></td>
+<td><input type="text" name="Completion[]" class="form-controlcom"></td>
+
+<td><input type="text" name="Efforts[]" class="form-controleff"></td>
+
+<td><select name="Status[]" class="form-controlsta">
+<option value="" selected="">Status</option>
+<option value="In Process">In Process</option>
+<option value="Completed">Completed</option>
+<option value="On Hold">On Hold</option>
+
+</select></td>
+<td><a href='javascript:void(0);' style="font-size:18px; color:red"  class='remove'><span class='glyphicon glyphicon-trash'></span></a></td>
+<td><a href='javascript:void(0);' style="font-size:18px; color:orange" id="edit" class='edit'><span class='glyphicon glyphicon-pencil'></span></a></td>
+</tr>
+</table>
+<center><button class="button">Save & Submit</button></center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+<script>
+$(function(){
+    $('#addMore').on('click', function() {
+              var data = $("#tb tr:eq(1)").clone(true).appendTo("#tb");
+              data.find("input").val('');
+     });
+
+     $(document).on('click', '.remove', function() {
+         var trIndex = $(this).closest("tr").index();
+            if(trIndex>1) {
+             $(this).closest("tr").remove();
+           } else {
+             alert("Sorry!! Can't remove first row!");
+           }
+      });
+
+$(document).ready(function(){
+		$('#edit').click(function(){				
+			if(confirm("Want to edit all field?")){
+				/*Clear all input type="text" box*/
+				$('input[type="text"]').val('');
+				/*Clear textarea using id */
+				$('input[type="date"]').val('');
+				$('Select').val('');;
+			}					
+		});
+	});
+
+	
+});      
+</script>
+
+
+
+
+
+
