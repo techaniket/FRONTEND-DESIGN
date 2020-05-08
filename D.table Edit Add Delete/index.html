@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Daily Status</title>
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="jquery.fulltable.js"></script>
+	<link rel="stylesheet" href="jquery.fulltable.css"/>
+	<style type="text/css">
+    body { background-color:#fafafa; font-family:'Roboto';}
+    .container { margin:5px auto; border:1px solid black; width:95%; border-radius:20px;}
+		table {
+			position:relative;
+			width:525px;
+			margin:4px 0;
+			border-collapse: collapse;
+			font-family: tahoma, arial, helvetica !important;
+			font-size: 9pt !important;
+		}
+		table, table th, table td {
+			border: 2px solid lightblue;
+			
+			
+		}
+		table th, table td {
+			padding:0 3em;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			overflow:hidden;
+			line-height:22px;
+			height:22px;
+		}
+
+		a.button {
+			position: relative;
+			display: inline-block;
+			font-family: tahoma, arial, helvetica;
+			font-size: 9pt;
+			font-weight: bold;
+			color: #ffffff;
+			background-color: #008cba;
+			border:1px solid #008cba;
+			padding: 5px;
+			text-decoration: none;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(
+			function() {
+				$("#test-table").FullTable({
+					"alwaysCreating":true,
+					"selectable":true,
+					"fields": {
+						"project":{
+							"options":[
+								{
+									"title":"SeeR",
+									"value":"xy"
+								},
+								{
+									"title":"Nokia",
+									"value":"xx"
+								},
+{
+									"title":"Liberty Steel",
+									"value":"xz"
+								},
+
+							],
+							"mandatory":true,
+							"placeholder":"",
+							"errors":{
+								"mandatory":"Project name is mandatory"
+							}
+						},
+						"status":{
+							"options":[
+								{
+									"title":"In progress",
+									"value":"xy"
+								},
+								{
+									"title":"On Hold",
+									"value":"xx"
+								},
+{
+									"title":"Completed",
+									"value":"xz"
+								},
+
+							],
+							"mandatory":true,
+							"placeholder":"",
+							"errors":{
+								"mandatory":"Project name is mandatory"
+							}
+						},
+						"category":{
+							"options":[
+								{
+									"title":"Develop",
+									"value":"xy"
+								},
+								{
+									"title":"Design",
+									"value":"xx"
+								},
+								{
+									"title":"Discussion",
+									"value":"xz"
+								},
+{
+									"title":"Training",
+									"value":"xy1"
+								},
+{
+									"title":"Meeting",
+									"value":"xx1"
+								},
+{
+									"title":"Leave",
+									"value":"xz1"
+								},
+{
+									"title":"Holiday",
+									"value":"xy2"
+								},
+
+							],
+							"mandatory":true,
+							"placeholder":"",
+							"errors":{
+								"mandatory":"category name is mandatory"
+							}
+						},
+
+						"s.no":{
+							"mandatory":true,
+							"errors":{
+								"mandatory":"S.no is mandatory"
+							}
+						},
+						"date":{
+							"mandatory":true,
+							"errors":{
+								"mandatory":"date name is mandatory"
+							}
+						},
+						"details":{
+							"mandatory":true,
+							"errors":{
+								"mandatory":"details is mandatory"
+							}
+						},
+						"completion":{
+							"mandatory":true,
+							"errors":{
+								"mandatory":"completion is mandatory"
+							}
+						},
+						"efforts":{
+							"mandatory":true,
+							"errors":{
+								"mandatory":"efforts is mandatory"
+							}
+						},
+
+						
+						
+						"description":{
+							"mandatory":false
+						}
+					}
+				});
+				$("#test-table-add-row").click(function() {
+					$("#test-table").FullTable("addRow");
+				});
+				$("#test-table-get-value").click(function() {
+					console.log($("#test-table").FullTable("getData"));
+				});
+				$("#test-table").FullTable("on", "error", function(errors) {
+					for (var error in errors) {
+						error = errors[error];
+						console.log(error);
+					}
+				});
+				$("#test-table").FullTable("draw");
+			}
+		);
+	</script>
+</head>
+<body>
+
+<div class="jquery-script-center">
+<div class="jquery-script-ads"><script type="text/javascript">
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+	<div class="container">
+    <h1>Daily Status</h1>
+	<table class="fulltable fulltable-editable" id="test-table">
+		<thead>
+			<tr>
+				<th fulltable-field-name="s.no">S.No</th>
+				<th fulltable-field-name="date">Date</th>
+				<th fulltable-field-name="project">Project</th>
+				<th fulltable-field-name="category">Category</th>
+				<th fulltable-field-name="details"> Project Details</th>
+				<th fulltable-field-name="completion">Completion</th>
+				<th fulltable-field-name="efforts">Efforts</th>
+				<th fulltable-field-name="status">Status</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><span>1</span></td>
+				<td><span>12/02/2020</span></td>
+				<td><span>xy</span></td>
+				<td><span>xy</span></td>
+				<td><span>Visual </span></td>
+				<td><span>30</span></td>
+				<td><span>2</span></td>
+				<td><span>xy</span></td>
+				
+			</tr>
+			
+		</tbody>
+	</table>
+	<center><a href="#" class="button btn btn-danger" id="test-table-get-value"> Save & Submit</a></center>
+    </div>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
