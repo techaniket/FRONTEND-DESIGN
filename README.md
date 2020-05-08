@@ -1,3 +1,4 @@
 # Frontend_UI_design
-1. Carsousal using bootstrap 
-2. Dynamic Row creation~ Edit, add, delete, save functionality
+ Carsousal using bootstrap 
+ Dynamic Row creation~ Edit, add, delete, save functionality
+ Dynamic Row using bootstrap 
