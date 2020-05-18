@@ -1,4 +1,5 @@
 # Frontend_UI_design
- Carsousal using bootstrap 
- Dynamic Row creation~ Edit, add, delete, save functionality
- Dynamic Row using bootstrap 
+ 1. Carsousal using bootstrap 
+ 2. Dynamic Row creation~ Edit, add, delete, save functionality
+ 3. Dynamic Row using bootstrap 
+ 4. Quiz Templete 
