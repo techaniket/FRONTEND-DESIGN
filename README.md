@@ -4,3 +4,4 @@
  3. Dynamic Row using bootstrap 
  4. Quiz Templete 
  5. Sign-In & Sign-Up Form
+ 6. Animated About Hover Effect
